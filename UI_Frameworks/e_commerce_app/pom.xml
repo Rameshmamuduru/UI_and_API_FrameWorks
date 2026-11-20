@@ -35,11 +35,13 @@
 
         <!-- Apache Commons Email -->
         <commons-email.version>1.6</commons-email.version>
+        <allure.version>2.29.1</allure.version>
+		<aspectj.version>1.9.25</aspectj.version>
 
     </properties>
 
     <dependencies>
-
+		
         <!-- Selenium WebDriver -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -117,6 +119,22 @@
 		    <version>1.5</version>
 		    <scope>compile</scope>
 		</dependency>
+		
+		<!-- Allure TestNG -->
+		<dependency>
+		    <groupId>io.qameta.allure</groupId>
+		    <artifactId>allure-testng</artifactId>
+		    <version>${allure.version}</version>
+		    <scope>test</scope>
+		</dependency>
+		
+		<!-- AspectJ Weaver -->
+		<dependency>
+		    <groupId>org.aspectj</groupId>
+		    <artifactId>aspectjweaver</artifactId>
+		    <version>${aspectj.version}</version>
+		    <scope>test</scope>
+		</dependency>
 
     </dependencies>
 
@@ -144,6 +162,13 @@
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
+            
+            <!-- Allure Maven Plugin -->
+			<plugin>
+			    <groupId>io.qameta.allure</groupId>
+			    <artifactId>allure-maven</artifactId>
+			    <version>2.15.0</version>
+			</plugin>
 
         </plugins>
     </build>
