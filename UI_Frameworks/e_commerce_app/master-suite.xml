@@ -1,0 +1,31 @@
+
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Master-Suite">
+
+    <listeners>
+        <listener class-name="utilities.ExtentReportManager"/>
+    </listeners>
+
+    <test name="Master-Tests">
+
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <include name="funtional"/>
+                <include name="regression"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="testCases.CheckOutandPaymentTestCases"/>
+            <class name="testCases.HomeCatalogueTestCases"/>
+            <class name="testCases.UserRegistrationTestCases"/>
+            <class name="testCases.UserLoginTestCases"/>
+            <class name="testCases.CartTestCases"/>
+        </classes>
+
+    </test>
+
+</suite>

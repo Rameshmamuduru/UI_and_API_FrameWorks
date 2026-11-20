@@ -1,0 +1,29 @@
+
+# Eclipse workspace
+.metadata/
+**/.metadata/
+
+# Eclipse generated files
+.settings/
+.project
+.classpath
+
+# Maven generated files
+target/
+**/target/
+
+# Test execution reports
+test-output/
+allure-results/
+allure-report/
+reports/
+logs/
+screenshots/
+
+# IDE files
+.idea/
+*.iml
+
+# Operating system files
+.DS_Store
+Thumbs.db
