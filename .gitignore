@@ -14,10 +14,6 @@ target/
 # Test reports and execution results
 test-output/
 allure-results/
-allure-report/
-reports/
-logs/
-screenshots/
 
 # OS files
 .DS_Store
