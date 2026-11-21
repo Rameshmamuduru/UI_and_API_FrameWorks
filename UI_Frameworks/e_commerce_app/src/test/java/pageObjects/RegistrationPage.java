@@ -28,11 +28,11 @@ public class RegistrationPage extends BasePage {
 	
 	//Address information
 	
+	@FindBy(xpath="//input[@id='address2']") WebElement address2;
 	@FindBy(xpath="//input[@id='first_name']") WebElement firstName;
 	@FindBy(xpath="//input[@id='last_name']") WebElement lastName;
 	@FindBy(xpath="//input[@id='company']") WebElement company;
 	@FindBy(xpath="//input[@id='address1']") WebElement address1;
-	@FindBy(xpath="//input[@id='address2']") WebElement address2;
 	@FindBy(xpath="//select[@id='country']") WebElement country;
 	@FindBy(xpath="//input[@id='state']") WebElement state;
 	@FindBy(xpath="//input[@id='city']") WebElement city;
