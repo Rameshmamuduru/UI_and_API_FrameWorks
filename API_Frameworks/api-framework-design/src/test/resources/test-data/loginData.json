@@ -1,0 +1,28 @@
+
+[
+  {
+    "username": "admin",
+    "password": "password123",
+    "testType": "valid"
+  },
+  {
+    "username": null,
+    "password": "password@123",
+    "testType": "invalid"
+  },
+  {
+    "username": "admin",
+    "password": null,
+    "testType": "invalid"
+  },
+  {
+    "username": "",
+    "password": "password@123",
+    "testType": "invalid"
+  },
+  {
+    "username": "admin",
+    "password": "",
+    "testType": "invalid"
+  }
+]
